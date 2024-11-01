@@ -30,7 +30,7 @@ productCards.forEach((card) => {
         unitPrice = parseInt(priceText, 10);
 
         modalProductName.innerText = productName;
-        document.getElementById('price').innerText = `${unitPrice.toLocaleString('vi-VN')} đ`;
+        document.getElementById('price').innerText = `${unitPrice.toLocaleString('vi-VN')}`;
         updateTotalPrice();
         openOrderModal();
         resetForm();
@@ -84,7 +84,7 @@ quantityInput.oninput = updateTotalPrice;
 
 function updateTotalPrice() {
     const quantity = parseInt(quantityInput.value, 10) || 0;
-    totalPrice.innerText = `${(quantity * unitPrice).toLocaleString('vi-VN')} đ`;
+    totalPrice.innerText = `${(quantity * unitPrice).toLocaleString('vi-VN')}`;
 }
 
 // Hiển thị lỗi khi nhập sai
