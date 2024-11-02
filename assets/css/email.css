@@ -32,24 +32,23 @@
     margin-bottom: 5px;
 }
 
-.order-name {
+.order-name{
     font-weight: bold;
     margin-bottom: 5px;
 }
 
-.order-details {
+.order-details{
     font-size: 14px;
     color: #666;
     line-height: 1.4;
 }
-
-/* Animation khi hiển thị */
-.order-display {
+
+.order-display{
     transform-origin: top right;
     animation: showOrder 0.2s ease-out;
 }
 
-@keyframes showOrder {
+@keyframes showOrder{
     from {
         opacity: 0;
         transform: translateY(-10px);
